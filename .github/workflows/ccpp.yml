@@ -4,12 +4,8 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: windows-latest 
     
     steps:
-    - uses: actions/checkout@v1
     - name: make1
       run: gcc Download_video.c -o Download_video.exe
-    - name: make2
-      run: g++ Hash_obfs.cpp -o Hash_obfs.exe
