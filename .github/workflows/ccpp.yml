@@ -5,11 +5,11 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest 
+    runs-on: windows-latest 
     
     steps:
     - uses: actions/checkout@v2
     - name: make1
-      run: g++ Hash_obfs.cpp -o Hash_obfs
+      run: g++ Hash_obfs.cpp
     - name: make2
       run: gcc Download_video.c
