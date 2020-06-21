@@ -8,7 +8,9 @@ jobs:
     runs-on: windows-latest 
     
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
+    - name: install_mingw
+      run: choco install mingw
     - name: make1
       run: gcc Download_video.c -o Download_video.exe
     - name: make2
