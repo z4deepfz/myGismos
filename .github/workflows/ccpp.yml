@@ -5,13 +5,9 @@ on: [push]
 jobs:
   build:
 
-    runs-on: windows-latest 
+    runs-on: ubuntu-latest 
     
     steps:
     - uses: actions/checkout@v2
-    - name: install_mingw
-      run: choco install mingw
-    - name: make1
-      run: gcc Download_video.c -o Download_video.exe
     - name: make2
-      run: g++ Hash_obfs.cpp -o Hash_obfs.exe
+      run: g++ Hash_obfs.cpp -o Hash_obfs
