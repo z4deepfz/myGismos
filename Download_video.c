@@ -6,7 +6,7 @@
 #include <windows.h>
 #include <string.h>
 #define stred(x) x+strlen(x)
-const int MAXL = 512;
+#define MAXL 512
 
 int main()
 {
