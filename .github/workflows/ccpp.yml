@@ -12,5 +12,5 @@ jobs:
     - name: pre
       run: sudo apt-get install tree
     - name: make1
-      run: cd $GITHUB_REPOSITORY && ls && tree
+      run: cd $GITHUB_WORKSPACE && ls && tree
 
