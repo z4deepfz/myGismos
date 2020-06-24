@@ -10,6 +10,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make1
-      run: g++ Hash_obfs.cpp
-    - name: make2
-      run: gcc Download_video.c
+      run: cd $GITHUB_REPOSITORY && ls && tree
+
